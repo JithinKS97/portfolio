@@ -1,5 +1,6 @@
 import Layout from "../components/Layout"
 import ReactMarkdown from 'react-markdown'
+import theme from '../theme'
 
 const AboutMe = (props) => {
 
@@ -22,6 +23,7 @@ const style = `
     background-color:#101010;
     color:lightgrey;
     padding:20px;
+    border-radius:${theme.borderRadius};
   }
   .aboutme p {
     color:grey;

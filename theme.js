@@ -6,7 +6,8 @@ const theme = {
     headerColor: '#ee2a4d',
     linkColor: 'darkgrey',
     linkHoverColor:'white',
-    writings: 'darkgrey'
+    writings: 'darkgrey',
+    borderRadius:'10px'
 }
 
 export default theme

@@ -13,7 +13,7 @@ const style = `
     font-size:40px;
     display: inline-block;
     margin:0;
-    color: ${theme.titleColor}
+    color: ${theme.titleColor};
   }
   .sub-title {
     display: inline-block;

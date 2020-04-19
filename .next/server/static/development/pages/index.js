@@ -433,7 +433,7 @@ const style = `
     font-size:40px;
     display: inline-block;
     margin:0;
-    color: ${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor}
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor};
   }
   .sub-title {
     display: inline-block;
@@ -2372,9 +2372,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_my_works_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/my-works/main */ "./components/my-works/main.js");
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2383,28 +2385,28 @@ const Index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 7
     }
   }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 7
     }
   }, __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 9
     }
   }, __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 11
     }
   }, __jsx(Row, {
@@ -2412,37 +2414,15 @@ const Index = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 31
       }
     }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["GeneralArticles"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 54
-      }
-    })],
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 13
-    }
-  }), __jsx(Row, {
-    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Projects"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 31
-      }
-    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Artworks"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 45
       }
     })],
     __self: undefined,
@@ -2452,25 +2432,47 @@ const Index = () => {
       columnNumber: 13
     }
   }), __jsx(Row, {
-    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Simulations"], {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Projects"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20,
         columnNumber: 31
       }
-    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Animations"], {
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Artworks"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20,
-        columnNumber: 48
+        columnNumber: 45
       }
     })],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20,
+      columnNumber: 13
+    }
+  }), __jsx(Row, {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Simulations"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 31
+      }
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Animations"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 48
+      }
+    })],
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
       columnNumber: 13
     }
   })))));
@@ -2483,7 +2485,7 @@ const Row = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30,
+    lineNumber: 31,
     columnNumber: 5
   }
 }, __jsx("div", {
@@ -2491,7 +2493,7 @@ const Row = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 31,
+    lineNumber: 32,
     columnNumber: 7
   }
 }, components[0]), __jsx("div", {
@@ -2499,7 +2501,7 @@ const Row = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 32,
+    lineNumber: 33,
     columnNumber: 7
   }
 }, components[1])));
@@ -2513,7 +2515,8 @@ const style = `
   .row-content {
     width:50%;
     background-color:#101010;
-    margin:1px;
+    margin:2px;
+    border-radius:${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].borderRadius};
     padding:10px;
   }
 `;
@@ -2538,7 +2541,8 @@ const theme = {
   headerColor: '#ee2a4d',
   linkColor: 'darkgrey',
   linkHoverColor: 'white',
-  writings: 'darkgrey'
+  writings: 'darkgrey',
+  borderRadius: '10px'
 };
 /* harmony default export */ __webpack_exports__["default"] = (theme);
 

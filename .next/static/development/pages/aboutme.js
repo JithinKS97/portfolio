@@ -219,7 +219,7 @@ var Title = function Title() {
   }, "Portfolio website of Jithin KS"));
 };
 
-var style = "\n  .title {\n    font-size:40px;\n    display: inline-block;\n    margin:0;\n    color: ".concat(_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor, "\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n    color:").concat(_theme__WEBPACK_IMPORTED_MODULE_1__["default"].subTitleColor, "\n  }\n");
+var style = "\n  .title {\n    font-size:40px;\n    display: inline-block;\n    margin:0;\n    color: ".concat(_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor, ";\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n    color:").concat(_theme__WEBPACK_IMPORTED_MODULE_1__["default"].subTitleColor, "\n  }\n");
 /* harmony default export */ __webpack_exports__["default"] = (Title);
 
 /***/ }),
@@ -13993,6 +13993,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../theme */ "./theme.js");
 
 
 var _this = undefined,
@@ -14003,20 +14004,21 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 var AboutMe = function AboutMe(props) {
   var content = props["default"];
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 7
     }
   }, __jsx("style", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 9
     }
   }, style), __jsx("div", {
@@ -14024,7 +14026,7 @@ var AboutMe = function AboutMe(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 9
     }
   }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -14032,13 +14034,13 @@ var AboutMe = function AboutMe(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 11
     }
   }))));
 };
 
-var style = "\n  .about-me {\n    background-color:#101010;\n    color:lightgrey;\n    padding:20px;\n  }\n  .aboutme p {\n    color:grey;\n  }\n";
+var style = "\n  .about-me {\n    background-color:#101010;\n    color:lightgrey;\n    padding:20px;\n    border-radius:".concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].borderRadius, ";\n  }\n  .aboutme p {\n    color:grey;\n  }\n");
 
 AboutMe.getInitialProps = function _callee(ctx) {
   var res;
@@ -14082,7 +14084,8 @@ var theme = {
   headerColor: '#ee2a4d',
   linkColor: 'darkgrey',
   linkHoverColor: 'white',
-  writings: 'darkgrey'
+  writings: 'darkgrey',
+  borderRadius: '10px'
 };
 /* harmony default export */ __webpack_exports__["default"] = (theme);
 

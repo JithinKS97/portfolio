@@ -362,7 +362,7 @@ const style = `
     font-size:40px;
     display: inline-block;
     margin:0;
-    color: ${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor}
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor};
   }
   .sub-title {
     display: inline-block;
@@ -2070,9 +2070,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-markdown */ "react-markdown");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/pages/aboutme.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2082,14 +2084,14 @@ const AboutMe = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 7
     }
   }, __jsx("style", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 9
     }
   }, style), __jsx("div", {
@@ -2097,7 +2099,7 @@ const AboutMe = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 9
     }
   }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2105,7 +2107,7 @@ const AboutMe = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 11
     }
   }))));
@@ -2116,6 +2118,7 @@ const style = `
     background-color:#101010;
     color:lightgrey;
     padding:20px;
+    border-radius:${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].borderRadius};
   }
   .aboutme p {
     color:grey;
@@ -2148,7 +2151,8 @@ const theme = {
   headerColor: '#ee2a4d',
   linkColor: 'darkgrey',
   linkHoverColor: 'white',
-  writings: 'darkgrey'
+  writings: 'darkgrey',
+  borderRadius: '10px'
 };
 /* harmony default export */ __webpack_exports__["default"] = (theme);
 

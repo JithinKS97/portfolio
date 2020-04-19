@@ -7,6 +7,7 @@ import {
   Animations,
 } from "../components/my-works/main";
 import Layout from '../components/Layout'
+import theme from '../theme'
 
 const Index = () => {
   return (
@@ -43,7 +44,8 @@ const style = `
   .row-content {
     width:50%;
     background-color:#101010;
-    margin:1px;
+    margin:2px;
+    border-radius:${theme.borderRadius};
     padding:10px;
   }
 `;
