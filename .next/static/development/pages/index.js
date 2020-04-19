@@ -23,41 +23,56 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var Layout = function Layout(_ref) {
   var children = _ref.children;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    width: 0,
+    height: 0
+  }),
+      dimensions = _useState[0],
+      setDimensions = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setDimensions({
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
+  }, []);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 5
+      lineNumber: 19,
+      columnNumber: 7
     }
   }, style), __jsx("div", {
     className: "wrapper",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 5
+      lineNumber: 20,
+      columnNumber: 7
     }
   }, __jsx(_Title__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
+      lineNumber: 21,
+      columnNumber: 9
     }
   }), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
+      lineNumber: 22,
+      columnNumber: 9
     }
   }), children));
 };
 
-var style = "\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n  }\n  body {\n    background-color:".concat(_theme__WEBPACK_IMPORTED_MODULE_3__["default"].darkBackground, ";\n  }\n\n");
+var style = "\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n  }\n  body {\n    background-color:".concat(_theme__WEBPACK_IMPORTED_MODULE_3__["default"].darkBackground, ";\n  }\n");
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
@@ -383,28 +398,28 @@ var List = function List(_ref) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5,
-      columnNumber: 5
+      columnNumber: 3
     }
   }, __jsx("style", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
-      columnNumber: 9
+      columnNumber: 5
     }
   }, style), __jsx("h2", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7,
-      columnNumber: 9
+      columnNumber: 5
     }
   }, header), __jsx("ol", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
-      columnNumber: 9
+      columnNumber: 5
     }
   }, contents.map(function (_ref2) {
     var link = _ref2.link,
@@ -415,8 +430,8 @@ var List = function List(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9,
-        columnNumber: 45
+        lineNumber: 10,
+        columnNumber: 9
       }
     });
   })));
