@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -311,16 +311,16 @@ const styles = `
 
 /***/ }),
 
-/***/ "./markdown/work-education.md":
-/*!************************************!*\
-  !*** ./markdown/work-education.md ***!
-  \************************************/
+/***/ "./markdown/aboutme.md":
+/*!*****************************!*\
+  !*** ./markdown/aboutme.md ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("## Work\n* Software Engineer at Baton systems, Chennai (2019-20)\n* GSoC 2018 fellow for Processing Foundation\n\n## Education\n* BTech in Computer Science from Government Engineering college Thrissur (2015-19)\n* Higher Secondary education from St.Antony's public school, Kottayam (2013-15)\n\n## Technologies and skills familiar with\n* React and Redux\n* Javascript (ES6)\n* NodeJS\n* NextJS\n* Creating interactive visualizations in P5 and Processing\n* MeteorJS\n* Creating 2D animations in Adobe Animate and Toonboom Animate Pro\n* Video editing in Camtasia studio\n* Web scraping in Puppeteer\n\n## Contact\n* Email: jithinks112@gmail.com\n* Phone number: 9562381055");
+/* harmony default export */ __webpack_exports__["default"] = ("\nI'm a person who cannot stop marveling about the existence of this wonderfully strange Universe of ours.\n\nThe thought that all these things that we see around us exist and we got lucky enough to be born as a being who is capable of looking at it and wonder about it always leaves me in awe.\n\nI think this feeling of mystery is one of the most beautiful feelings that we can experience as human beings. It is this same feeling that lead great minds in the past to reveal a lot of its mysteries.\n\nThe developments in Science and Math have helped us to know a great deal about it.\n\nNow we have a pile of evidence that our Universe began in an event called Big Bang that happened 13.7 billion years ago. Even though we still don't know what caused the Big bang, we have theories that are powerful enough to explain what happened a very tiny fraction of a second after the Big bang to the formation of stars, planets, galaxies and even what will eventually happen to the Universe in the far distant future. We have theories that explain how an intelligent species like ourselves evolved from molecules that could do nothing but just create copies of themselves.\n\nBut we are still far far away. \"We are at least 5 Einsteins away from understanding its true nature\", a quote that I recall from a book that I read recently.\n\nI think we can accelerate this understanding using the technologies that we have been developed recently. Improving the way Science and Math are taught using the latest developments in technology can bring a great change. My goal in life is to do whatever that I can towards this.");
 
 /***/ }),
 
@@ -1993,10 +1993,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/work-education.js":
-/*!*********************************!*\
-  !*** ./pages/work-education.js ***!
-  \*********************************/
+/***/ "./pages/aboutme.js":
+/*!**************************!*\
+  !*** ./pages/aboutme.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2007,13 +2007,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-markdown */ "react-markdown");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/jithinks/Desktop/portfolio/pages/work-education.js";
+var _jsxFileName = "/home/jithinks/Desktop/portfolio/pages/aboutme.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const WorkEducation = props => {
+const AboutMe = props => {
   const content = props.default;
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
@@ -2033,23 +2033,23 @@ const WorkEducation = props => {
   })));
 };
 
-WorkEducation.getInitialProps = async ctx => {
-  const res = await __webpack_require__(/*! ../markdown/work-education.md */ "./markdown/work-education.md");
+AboutMe.getInitialProps = async ctx => {
+  const res = await __webpack_require__(/*! ../markdown/aboutme.md */ "./markdown/aboutme.md");
   return res;
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (WorkEducation);
+/* harmony default export */ __webpack_exports__["default"] = (AboutMe);
 
 /***/ }),
 
-/***/ 6:
-/*!***************************************!*\
-  !*** multi ./pages/work-education.js ***!
-  \***************************************/
+/***/ 5:
+/*!********************************!*\
+  !*** multi ./pages/aboutme.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/jithinks/Desktop/portfolio/pages/work-education.js */"./pages/work-education.js");
+module.exports = __webpack_require__(/*! /home/jithinks/Desktop/portfolio/pages/aboutme.js */"./pages/aboutme.js");
 
 
 /***/ }),
@@ -2121,4 +2121,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=work-education.js.map
+//# sourceMappingURL=aboutme.js.map

@@ -6,7 +6,7 @@
 * BTech in Computer Science from Government Engineering college Thrissur (2015-19)
 * Higher Secondary education from St.Antony's public school, Kottayam (2013-15)
 
-## Technologies familiar with
+## Technologies and skills familiar with
 * React and Redux
 * Javascript (ES6)
 * NodeJS
@@ -15,3 +15,8 @@
 * MeteorJS
 * Creating 2D animations in Adobe Animate and Toonboom Animate Pro
 * Video editing in Camtasia studio
+* Web scraping in Puppeteer
+
+## Contact
+* Email: jithinks112@gmail.com
+* Phone number: 9562381055
