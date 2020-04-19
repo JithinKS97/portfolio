@@ -165,14 +165,23 @@ const Layout = ({
   }
 }), children));
 
+const theme = {
+  darkBackground: 'black',
+  titleColor: 'white',
+  subTitleColor: 'darkgrey',
+  headerColor: '#ee2a4d'
+};
 const style = `
   .title {
+    font-size:40px;
     display: inline-block;
     margin:0;
+    color: ${theme.titleColor}
   }
   .sub-title {
     display: inline-block;
     margin-left: 0.5rem;
+    color:${theme.subTitleColor}
   }
   * {
     font-family:Roboto;
@@ -187,6 +196,20 @@ const style = `
   }
   h2 {
     margin:0;
+    color: ${theme.headerColor}
+  }
+  body {
+    background-color:${theme.darkBackground};
+  }
+  a {
+    color:grey;
+    text-decoration:none;
+  }
+  a:hover {
+    color:white;
+  }
+  li {
+    color:white;
   }
 `;
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -195,7 +218,7 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42,
+    lineNumber: 66,
     columnNumber: 3
   }
 }, __jsx("h1", {
@@ -203,7 +226,7 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43,
+    lineNumber: 67,
     columnNumber: 5
   }
 }, "When you wake"), __jsx("div", {
@@ -211,7 +234,7 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44,
+    lineNumber: 68,
     columnNumber: 5
   }
 }, "Portfolio website of Jithin KS"));
@@ -242,7 +265,7 @@ const Link = ({
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3,
-      columnNumber: 5
+      columnNumber: 9
     }
   }, __jsx("a", {
     target: "_blank",
@@ -251,7 +274,7 @@ const Link = ({
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3,
-      columnNumber: 9
+      columnNumber: 13
     }
   }, title));
 };
@@ -348,63 +371,43 @@ const styles = `
     .nav-bar li {
         display:inline-block;
         margin-right:0.5rem;
+        color:black;
+    }
+    .nav-bar a {
+        text-decoration:none;
+        color:darkgrey;
+        font-weight:bold;
+    }
+    .nav-bar a:hover {
+        text-decoration:none;
+        color:lightgrey;
     }
 `;
 
 /***/ }),
 
-/***/ "./components/my-works/Animations.js":
-/*!*******************************************!*\
-  !*** ./components/my-works/Animations.js ***!
-  \*******************************************/
-/*! exports provided: default */
+/***/ "./components/my-works/contents.js":
+/*!*****************************************!*\
+  !*** ./components/my-works/contents.js ***!
+  \*****************************************/
+/*! exports provided: artworks, animations, generalArticles, projects, technicalArticles, simulations */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Animations.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Animations = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 5
-  }
-}, __jsx("h2", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 9
-  }
-}, "Animations"), __jsx("ol", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 9
-  }
-}, animations.map(({
-  link,
-  title
-}) => __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  link: link,
-  title: title,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 47
-  }
-}))));
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "artworks", function() { return artworks; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animations", function() { return animations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generalArticles", function() { return generalArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projects", function() { return projects; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "technicalArticles", function() { return technicalArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "simulations", function() { return simulations; });
+const artworks = [{
+  title: "Coverpage of Dyuthi website",
+  link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax_night/sketch/index.html"
+}, {
+  title: "Spring effect on text",
+  link: "https://jithinks97.github.io/TEDX/index.html"
+}];
 const animations = [{
   title: "AnimateBig (Youtube animation channel)",
   link: "https://www.youtube.com/user/animatebig/videos"
@@ -415,126 +418,7 @@ const animations = [{
   title: "Wise dude on top of mountain",
   link: "https://www.youtube.com/watch?v=FQ8XlLlXE70"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Animations);
-
-/***/ }),
-
-/***/ "./components/my-works/Artworks.js":
-/*!*****************************************!*\
-  !*** ./components/my-works/Artworks.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Artworks.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Artworks = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4,
-    columnNumber: 5
-  }
-}, __jsx("h2", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 9
-  }
-}, "Artworks"), __jsx("ol", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 9
-  }
-}, artworks.map(({
-  link,
-  title
-}) => __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  link: link,
-  title: title,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 45
-  }
-}))));
-
-const artworks = [{
-  title: "Coverpage of Dyuthi website",
-  link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax_night/sketch/index.html"
-}, {
-  title: "Spring effect on text",
-  link: "https://jithinks97.github.io/TEDX/index.html"
-}];
-/* harmony default export */ __webpack_exports__["default"] = (Artworks);
-
-/***/ }),
-
-/***/ "./components/my-works/GeneralArticles.js":
-/*!************************************************!*\
-  !*** ./components/my-works/GeneralArticles.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/GeneralArticles.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Articles = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4,
-    columnNumber: 5
-  }
-}, __jsx("h2", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 9
-  }
-}, "General articles"), __jsx("ol", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 9
-  }
-}, articles.map(({
-  link,
-  title
-}) => __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  link: link,
-  title: title,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 45
-  }
-}))));
-
-const articles = [{
+const generalArticles = [{
   title: "The most beautiful feeling",
   link: "https://medium.com/@jithunni.ks/the-most-beautiful-feeling-b74aa7f82ba0"
 }, {
@@ -547,122 +431,20 @@ const articles = [{
   title: "Are we becoming machine during examination",
   link: "https://medium.com/@jithunni.ks/are-we-becoming-a-machine-during-examination-2f6afc0c9a7c"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Articles);
-
-/***/ }),
-
-/***/ "./components/my-works/Projects.js":
-/*!*****************************************!*\
-  !*** ./components/my-works/Projects.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Projects.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Projects = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4,
-    columnNumber: 5
-  }
-}, __jsx("h2", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 9
-  }
-}, "Projects"), __jsx("ol", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 9
-  }
-}, projects.map(({
-  link,
-  title
-}) => __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  link: link,
-  title: title,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 45
-  }
-}))));
-
 const projects = [{
   title: "Dynamic learning",
   link: "https://www.dynamiclearning.io/"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Projects);
-
-/***/ }),
-
-/***/ "./components/my-works/Simulations.js":
-/*!********************************************!*\
-  !*** ./components/my-works/Simulations.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Simulations.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Simulations = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4,
-    columnNumber: 5
-  }
-}, __jsx("h2", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 9
-  }
-}, "Simulations"), __jsx("ol", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 9
-  }
-}, simulations.map(({
-  link,
-  title
-}) => __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  link: link,
-  title: title,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 48
-  }
-}))));
-
+const technicalArticles = [{
+  title: "Improving Science and Math education using p5.js",
+  link: "https://medium.com/processing-foundation/improving-science-and-math-education-using-p5-js-d434beea465c"
+}, {
+  title: "Writing clean code in React",
+  link: "https://dev.to/jithinks97/writing-clean-react-code-2mcm"
+}, {
+  title: "Understanding the Universe through code",
+  link: "https://dev.to/jithinks97/understanding-the-universe-through-code-dg8"
+}];
 const simulations = [{
   title: "Dynamic learning workbooks",
   link: "https://www.dynamiclearning.io/explore"
@@ -685,14 +467,13 @@ const simulations = [{
   title: "Rotation of coordinate system",
   link: "https://jithinks97.github.io/Dynamic-Learning/Rotation%20of%20coordinate%20system/index.html"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Simulations);
 
 /***/ }),
 
-/***/ "./components/my-works/TechnicalArticles.js":
-/*!**************************************************!*\
-  !*** ./components/my-works/TechnicalArticles.js ***!
-  \**************************************************/
+/***/ "./components/my-works/list.js":
+/*!*************************************!*\
+  !*** ./components/my-works/list.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -701,12 +482,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/TechnicalArticles.js";
+var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/list.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Articles = () => __jsx("div", {
+const List = ({
+  header,
+  contents
+}) => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -720,14 +504,14 @@ const Articles = () => __jsx("div", {
     lineNumber: 5,
     columnNumber: 9
   }
-}, "Technical articles"), __jsx("ol", {
+}, header), __jsx("ul", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6,
     columnNumber: 9
   }
-}, articles.map(({
+}, contents.map(({
   link,
   title
 }) => __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -741,17 +525,94 @@ const Articles = () => __jsx("div", {
   }
 }))));
 
-const articles = [{
-  title: "Improving Science and Math education using p5.js",
-  link: "https://medium.com/processing-foundation/improving-science-and-math-education-using-p5-js-d434beea465c"
-}, {
-  title: "Writing clean code in React",
-  link: "https://dev.to/jithinks97/writing-clean-react-code-2mcm"
-}, {
-  title: "Understanding the Universe through code",
-  link: "https://dev.to/jithinks97/understanding-the-universe-through-code-dg8"
-}];
-/* harmony default export */ __webpack_exports__["default"] = (Articles);
+/* harmony default export */ __webpack_exports__["default"] = (List);
+
+/***/ }),
+
+/***/ "./components/my-works/main.js":
+/*!*************************************!*\
+  !*** ./components/my-works/main.js ***!
+  \*************************************/
+/*! exports provided: Animations, TechnicalArticles, Simulations, GeneralArticles, Projects, Artworks */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Animations", function() { return Animations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TechnicalArticles", function() { return TechnicalArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Simulations", function() { return Simulations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeneralArticles", function() { return GeneralArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Projects", function() { return Projects; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Artworks", function() { return Artworks; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list */ "./components/my-works/list.js");
+/* harmony import */ var _contents__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contents */ "./components/my-works/contents.js");
+var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/main.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Animations = () => __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  header: "Animations",
+  contents: _contents__WEBPACK_IMPORTED_MODULE_2__["animations"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 3
+  }
+});
+const TechnicalArticles = () => __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  header: "Technical Articles",
+  contents: _contents__WEBPACK_IMPORTED_MODULE_2__["technicalArticles"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }
+});
+const Simulations = () => __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  header: "Simulations",
+  contents: _contents__WEBPACK_IMPORTED_MODULE_2__["simulations"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13,
+    columnNumber: 5
+  }
+});
+const GeneralArticles = () => __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  header: "General Articles",
+  contents: _contents__WEBPACK_IMPORTED_MODULE_2__["generalArticles"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17,
+    columnNumber: 5
+  }
+});
+const Projects = () => __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  header: "Projects",
+  contents: _contents__WEBPACK_IMPORTED_MODULE_2__["projects"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21,
+    columnNumber: 5
+  }
+});
+const Artworks = () => __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  header: "Artworks",
+  contents: _contents__WEBPACK_IMPORTED_MODULE_2__["artworks"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 25,
+    columnNumber: 5
+  }
+});
 
 /***/ }),
 
@@ -2435,21 +2296,11 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/my-works/GeneralArticles */ "./components/my-works/GeneralArticles.js");
-/* harmony import */ var _components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/my-works/TechnicalArticles */ "./components/my-works/TechnicalArticles.js");
-/* harmony import */ var _components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/my-works/Projects */ "./components/my-works/Projects.js");
-/* harmony import */ var _components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/my-works/Artworks */ "./components/my-works/Artworks.js");
-/* harmony import */ var _components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/my-works/Simulations */ "./components/my-works/Simulations.js");
-/* harmony import */ var _components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/my-works/Animations */ "./components/my-works/Animations.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_my_works_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/my-works/main */ "./components/my-works/main.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
 
 
 
@@ -2458,94 +2309,94 @@ const Index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 7
     }
-  }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 7
     }
   }, __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 11
     }
   }, __jsx(Row, {
-    components: [__jsx(_components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["TechnicalArticles"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 31
       }
-    }), __jsx(_components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["GeneralArticles"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 54
       }
     })],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 18,
       columnNumber: 13
     }
   }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Projects"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 31
       }
-    }), __jsx(_components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Artworks"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 45
       }
     })],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 19,
       columnNumber: 13
     }
   }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Simulations"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 31
       }
-    }), __jsx(_components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Animations"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 48
       }
     })],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 20,
       columnNumber: 13
     }
   })))));
@@ -2558,7 +2409,7 @@ const Row = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 28,
+    lineNumber: 30,
     columnNumber: 5
   }
 }, __jsx("div", {
@@ -2566,7 +2417,7 @@ const Row = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 29,
+    lineNumber: 31,
     columnNumber: 7
   }
 }, components[0]), __jsx("div", {
@@ -2574,7 +2425,7 @@ const Row = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30,
+    lineNumber: 32,
     columnNumber: 7
   }
 }, components[1])));
@@ -2587,6 +2438,9 @@ const style = `
   }
   .row-content {
     width:50%;
+    background-color:#101010;
+    margin:1px;
+    padding:10px;
   }
 `;
 /* harmony default export */ __webpack_exports__["default"] = (Index);

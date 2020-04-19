@@ -53,7 +53,13 @@ var Layout = function Layout(_ref) {
   }), children));
 };
 
-var style = "\n  .title {\n    display: inline-block;\n    margin:0;\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n  }\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n  }\n  h2 {\n    margin:0;\n  }\n";
+var theme = {
+  darkBackground: 'black',
+  titleColor: 'white',
+  subTitleColor: 'darkgrey',
+  headerColor: '#ee2a4d'
+};
+var style = "\n  .title {\n    font-size:40px;\n    display: inline-block;\n    margin:0;\n    color: ".concat(theme.titleColor, "\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n    color:").concat(theme.subTitleColor, "\n  }\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n  }\n  h2 {\n    margin:0;\n    color: ").concat(theme.headerColor, "\n  }\n  body {\n    background-color:").concat(theme.darkBackground, ";\n  }\n  a {\n    color:grey;\n    text-decoration:none;\n  }\n  a:hover {\n    color:white;\n  }\n  li {\n    color:white;\n  }\n");
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 var Title = function Title() {
@@ -61,7 +67,7 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 66,
       columnNumber: 3
     }
   }, __jsx("h1", {
@@ -69,7 +75,7 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 67,
       columnNumber: 5
     }
   }, "When you wake"), __jsx("div", {
@@ -77,7 +83,7 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 68,
       columnNumber: 5
     }
   }, "Portfolio website of Jithin KS"));
@@ -110,7 +116,7 @@ var Link = function Link(_ref) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3,
-      columnNumber: 5
+      columnNumber: 9
     }
   }, __jsx("a", {
     target: "_blank",
@@ -119,7 +125,7 @@ var Link = function Link(_ref) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3,
-      columnNumber: 9
+      columnNumber: 13
     }
   }, title));
 };
@@ -213,67 +219,32 @@ var Navbar = function Navbar() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
-var styles = "\n    .nav-bar {\n        padding:0;\n    }\n    .nav-bar li {\n        display:inline-block;\n        margin-right:0.5rem;\n    }\n";
+var styles = "\n    .nav-bar {\n        padding:0;\n    }\n    .nav-bar li {\n        display:inline-block;\n        margin-right:0.5rem;\n        color:black;\n    }\n    .nav-bar a {\n        text-decoration:none;\n        color:darkgrey;\n        font-weight:bold;\n    }\n    .nav-bar a:hover {\n        text-decoration:none;\n        color:lightgrey;\n    }\n";
 
 /***/ }),
 
-/***/ "./components/my-works/Animations.js":
-/*!*******************************************!*\
-  !*** ./components/my-works/Animations.js ***!
-  \*******************************************/
-/*! exports provided: default */
+/***/ "./components/my-works/contents.js":
+/*!*****************************************!*\
+  !*** ./components/my-works/contents.js ***!
+  \*****************************************/
+/*! exports provided: artworks, animations, generalArticles, projects, technicalArticles, simulations */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _this = undefined,
-    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Animations.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Animations = function Animations() {
-  return __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 5
-    }
-  }, __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, "Animations"), __jsx("ol", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 9
-    }
-  }, animations.map(function (_ref) {
-    var link = _ref.link,
-        title = _ref.title;
-    return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      link: link,
-      title: title,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8,
-        columnNumber: 47
-      }
-    });
-  })));
-};
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "artworks", function() { return artworks; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animations", function() { return animations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generalArticles", function() { return generalArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projects", function() { return projects; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "technicalArticles", function() { return technicalArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "simulations", function() { return simulations; });
+var artworks = [{
+  title: "Coverpage of Dyuthi website",
+  link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax_night/sketch/index.html"
+}, {
+  title: "Spring effect on text",
+  link: "https://jithinks97.github.io/TEDX/index.html"
+}];
 var animations = [{
   title: "AnimateBig (Youtube animation channel)",
   link: "https://www.youtube.com/user/animatebig/videos"
@@ -284,136 +255,7 @@ var animations = [{
   title: "Wise dude on top of mountain",
   link: "https://www.youtube.com/watch?v=FQ8XlLlXE70"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Animations);
-
-/***/ }),
-
-/***/ "./components/my-works/Artworks.js":
-/*!*****************************************!*\
-  !*** ./components/my-works/Artworks.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _this = undefined,
-    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Artworks.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Artworks = function Artworks() {
-  return __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 9
-    }
-  }, "Artworks"), __jsx("ol", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, artworks.map(function (_ref) {
-    var link = _ref.link,
-        title = _ref.title;
-    return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      link: link,
-      title: title,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7,
-        columnNumber: 45
-      }
-    });
-  })));
-};
-
-var artworks = [{
-  title: "Coverpage of Dyuthi website",
-  link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax_night/sketch/index.html"
-}, {
-  title: "Spring effect on text",
-  link: "https://jithinks97.github.io/TEDX/index.html"
-}];
-/* harmony default export */ __webpack_exports__["default"] = (Artworks);
-
-/***/ }),
-
-/***/ "./components/my-works/GeneralArticles.js":
-/*!************************************************!*\
-  !*** ./components/my-works/GeneralArticles.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _this = undefined,
-    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/GeneralArticles.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Articles = function Articles() {
-  return __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 9
-    }
-  }, "General articles"), __jsx("ol", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, articles.map(function (_ref) {
-    var link = _ref.link,
-        title = _ref.title;
-    return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      link: link,
-      title: title,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7,
-        columnNumber: 45
-      }
-    });
-  })));
-};
-
-var articles = [{
+var generalArticles = [{
   title: "The most beautiful feeling",
   link: "https://medium.com/@jithunni.ks/the-most-beautiful-feeling-b74aa7f82ba0"
 }, {
@@ -426,132 +268,20 @@ var articles = [{
   title: "Are we becoming machine during examination",
   link: "https://medium.com/@jithunni.ks/are-we-becoming-a-machine-during-examination-2f6afc0c9a7c"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Articles);
-
-/***/ }),
-
-/***/ "./components/my-works/Projects.js":
-/*!*****************************************!*\
-  !*** ./components/my-works/Projects.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _this = undefined,
-    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Projects.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Projects = function Projects() {
-  return __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 9
-    }
-  }, "Projects"), __jsx("ol", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, projects.map(function (_ref) {
-    var link = _ref.link,
-        title = _ref.title;
-    return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      link: link,
-      title: title,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7,
-        columnNumber: 45
-      }
-    });
-  })));
-};
-
 var projects = [{
   title: "Dynamic learning",
   link: "https://www.dynamiclearning.io/"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Projects);
-
-/***/ }),
-
-/***/ "./components/my-works/Simulations.js":
-/*!********************************************!*\
-  !*** ./components/my-works/Simulations.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
-var _this = undefined,
-    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/Simulations.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Simulations = function Simulations() {
-  return __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 9
-    }
-  }, "Simulations"), __jsx("ol", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, simulations.map(function (_ref) {
-    var link = _ref.link,
-        title = _ref.title;
-    return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      link: link,
-      title: title,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7,
-        columnNumber: 48
-      }
-    });
-  })));
-};
-
+var technicalArticles = [{
+  title: "Improving Science and Math education using p5.js",
+  link: "https://medium.com/processing-foundation/improving-science-and-math-education-using-p5-js-d434beea465c"
+}, {
+  title: "Writing clean code in React",
+  link: "https://dev.to/jithinks97/writing-clean-react-code-2mcm"
+}, {
+  title: "Understanding the Universe through code",
+  link: "https://dev.to/jithinks97/understanding-the-universe-through-code-dg8"
+}];
 var simulations = [{
   title: "Dynamic learning workbooks",
   link: "https://www.dynamiclearning.io/explore"
@@ -574,14 +304,13 @@ var simulations = [{
   title: "Rotation of coordinate system",
   link: "https://jithinks97.github.io/Dynamic-Learning/Rotation%20of%20coordinate%20system/index.html"
 }];
-/* harmony default export */ __webpack_exports__["default"] = (Simulations);
 
 /***/ }),
 
-/***/ "./components/my-works/TechnicalArticles.js":
-/*!**************************************************!*\
-  !*** ./components/my-works/TechnicalArticles.js ***!
-  \**************************************************/
+/***/ "./components/my-works/list.js":
+/*!*************************************!*\
+  !*** ./components/my-works/list.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -591,13 +320,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
 var _this = undefined,
-    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/TechnicalArticles.js";
+    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/list.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var Articles = function Articles() {
+var List = function List(_ref) {
+  var header = _ref.header,
+      contents = _ref.contents;
   return __jsx("div", {
     __self: _this,
     __source: {
@@ -612,16 +343,16 @@ var Articles = function Articles() {
       lineNumber: 5,
       columnNumber: 9
     }
-  }, "Technical articles"), __jsx("ol", {
+  }, header), __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
       columnNumber: 9
     }
-  }, articles.map(function (_ref) {
-    var link = _ref.link,
-        title = _ref.title;
+  }, contents.map(function (_ref2) {
+    var link = _ref2.link,
+        title = _ref2.title;
     return __jsx(_Link__WEBPACK_IMPORTED_MODULE_1__["default"], {
       link: link,
       title: title,
@@ -635,17 +366,108 @@ var Articles = function Articles() {
   })));
 };
 
-var articles = [{
-  title: "Improving Science and Math education using p5.js",
-  link: "https://medium.com/processing-foundation/improving-science-and-math-education-using-p5-js-d434beea465c"
-}, {
-  title: "Writing clean code in React",
-  link: "https://dev.to/jithinks97/writing-clean-react-code-2mcm"
-}, {
-  title: "Understanding the Universe through code",
-  link: "https://dev.to/jithinks97/understanding-the-universe-through-code-dg8"
-}];
-/* harmony default export */ __webpack_exports__["default"] = (Articles);
+/* harmony default export */ __webpack_exports__["default"] = (List);
+
+/***/ }),
+
+/***/ "./components/my-works/main.js":
+/*!*************************************!*\
+  !*** ./components/my-works/main.js ***!
+  \*************************************/
+/*! exports provided: Animations, TechnicalArticles, Simulations, GeneralArticles, Projects, Artworks */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Animations", function() { return Animations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TechnicalArticles", function() { return TechnicalArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Simulations", function() { return Simulations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeneralArticles", function() { return GeneralArticles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Projects", function() { return Projects; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Artworks", function() { return Artworks; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list */ "./components/my-works/list.js");
+/* harmony import */ var _contents__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contents */ "./components/my-works/contents.js");
+var _this = undefined,
+    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/main.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var Animations = function Animations() {
+  return __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    header: "Animations",
+    contents: _contents__WEBPACK_IMPORTED_MODULE_2__["animations"],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 3
+    }
+  });
+};
+var TechnicalArticles = function TechnicalArticles() {
+  return __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    header: "Technical Articles",
+    contents: _contents__WEBPACK_IMPORTED_MODULE_2__["technicalArticles"],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  });
+};
+var Simulations = function Simulations() {
+  return __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    header: "Simulations",
+    contents: _contents__WEBPACK_IMPORTED_MODULE_2__["simulations"],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 5
+    }
+  });
+};
+var GeneralArticles = function GeneralArticles() {
+  return __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    header: "General Articles",
+    contents: _contents__WEBPACK_IMPORTED_MODULE_2__["generalArticles"],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 5
+    }
+  });
+};
+var Projects = function Projects() {
+  return __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    header: "Projects",
+    contents: _contents__WEBPACK_IMPORTED_MODULE_2__["projects"],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 5
+    }
+  });
+};
+var Artworks = function Artworks() {
+  return __jsx(_list__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    header: "Artworks",
+    contents: _contents__WEBPACK_IMPORTED_MODULE_2__["artworks"],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 5
+    }
+  });
+};
 
 /***/ }),
 
@@ -4958,13 +4780,8 @@ try {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/my-works/GeneralArticles */ "./components/my-works/GeneralArticles.js");
-/* harmony import */ var _components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/my-works/TechnicalArticles */ "./components/my-works/TechnicalArticles.js");
-/* harmony import */ var _components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/my-works/Projects */ "./components/my-works/Projects.js");
-/* harmony import */ var _components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/my-works/Artworks */ "./components/my-works/Artworks.js");
-/* harmony import */ var _components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/my-works/Simulations */ "./components/my-works/Simulations.js");
-/* harmony import */ var _components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/my-works/Animations */ "./components/my-works/Animations.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_my_works_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/my-works/main */ "./components/my-works/main.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 var _this = undefined,
     _jsxFileName = "/home/jithinks/Desktop/portfolio/pages/index.js";
 
@@ -4973,104 +4790,99 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-
-
-
 var Index = function Index() {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 7
     }
-  }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 7
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 11
     }
   }, __jsx(Row, {
-    components: [__jsx(_components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["TechnicalArticles"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 31
       }
-    }), __jsx(_components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["GeneralArticles"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 54
       }
     })],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 18,
       columnNumber: 13
     }
   }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Projects"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 31
       }
-    }), __jsx(_components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Artworks"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 45
       }
     })],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 19,
       columnNumber: 13
     }
   }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    components: [__jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Simulations"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 31
       }
-    }), __jsx(_components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), __jsx(_components_my_works_main__WEBPACK_IMPORTED_MODULE_1__["Animations"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 48
       }
     })],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 20,
       columnNumber: 13
     }
   })))));
@@ -5083,7 +4895,7 @@ var Row = function Row(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 30,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -5091,7 +4903,7 @@ var Row = function Row(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 31,
       columnNumber: 7
     }
   }, components[0]), __jsx("div", {
@@ -5099,13 +4911,13 @@ var Row = function Row(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 32,
       columnNumber: 7
     }
   }, components[1])));
 };
 
-var style = "\n  .row {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n  }\n  .row-content {\n    width:50%;\n  }\n";
+var style = "\n  .row {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n  }\n  .row-content {\n    width:50%;\n    background-color:#101010;\n    margin:1px;\n    padding:10px;\n  }\n";
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),

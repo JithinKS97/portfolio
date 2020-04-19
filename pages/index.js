@@ -1,10 +1,12 @@
-import GeneralArticles from "../components/my-works/GeneralArticles";
-import TechnicalArticles from "../components/my-works/TechnicalArticles";
-import Projects from "../components/my-works/Projects";
-import Artworks from "../components/my-works/Artworks";
-import Simulations from "../components/my-works/Simulations";
-import Animations from "../components/my-works/Animations";
-import Layout from "../components/Layout";
+import {
+  TechnicalArticles,
+  GeneralArticles,
+  Projects,
+  Artworks,
+  Simulations,
+  Animations,
+} from "../components/my-works/main";
+import Layout from '../components/Layout'
 
 const Index = () => {
   return (
@@ -26,8 +28,8 @@ const Index = () => {
 const Row = ({ components }) => (
   <>
     <div className="row">
-      <div className='row-content'>{components[0]}</div>
-      <div className='row-content'>{components[1]}</div>
+      <div className="row-content">{components[0]}</div>
+      <div className="row-content">{components[1]}</div>
     </div>
   </>
 );
@@ -40,6 +42,9 @@ const style = `
   }
   .row-content {
     width:50%;
+    background-color:#101010;
+    margin:1px;
+    padding:10px;
   }
 `;
 

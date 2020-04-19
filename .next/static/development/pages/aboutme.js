@@ -53,7 +53,13 @@ var Layout = function Layout(_ref) {
   }), children));
 };
 
-var style = "\n  .title {\n    display: inline-block;\n    margin:0;\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n  }\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n  }\n  h2 {\n    margin:0;\n  }\n";
+var theme = {
+  darkBackground: 'black',
+  titleColor: 'white',
+  subTitleColor: 'darkgrey',
+  headerColor: '#ee2a4d'
+};
+var style = "\n  .title {\n    font-size:40px;\n    display: inline-block;\n    margin:0;\n    color: ".concat(theme.titleColor, "\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n    color:").concat(theme.subTitleColor, "\n  }\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n  }\n  h2 {\n    margin:0;\n    color: ").concat(theme.headerColor, "\n  }\n  body {\n    background-color:").concat(theme.darkBackground, ";\n  }\n  a {\n    color:grey;\n    text-decoration:none;\n  }\n  a:hover {\n    color:white;\n  }\n  li {\n    color:white;\n  }\n");
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 var Title = function Title() {
@@ -61,7 +67,7 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 66,
       columnNumber: 3
     }
   }, __jsx("h1", {
@@ -69,7 +75,7 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 67,
       columnNumber: 5
     }
   }, "When you wake"), __jsx("div", {
@@ -77,7 +83,7 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 68,
       columnNumber: 5
     }
   }, "Portfolio website of Jithin KS"));
@@ -170,7 +176,7 @@ var Navbar = function Navbar() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
-var styles = "\n    .nav-bar {\n        padding:0;\n    }\n    .nav-bar li {\n        display:inline-block;\n        margin-right:0.5rem;\n    }\n";
+var styles = "\n    .nav-bar {\n        padding:0;\n    }\n    .nav-bar li {\n        display:inline-block;\n        margin-right:0.5rem;\n        color:black;\n    }\n    .nav-bar a {\n        text-decoration:none;\n        color:darkgrey;\n        font-weight:bold;\n    }\n    .nav-bar a:hover {\n        text-decoration:none;\n        color:lightgrey;\n    }\n";
 
 /***/ }),
 
@@ -13962,16 +13968,33 @@ var AboutMe = function AboutMe(props) {
       lineNumber: 10,
       columnNumber: 7
     }
-  }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    source: content,
+  }, __jsx("style", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
       columnNumber: 9
     }
-  })));
+  }, style), __jsx("div", {
+    className: "about-me",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    source: content,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 11
+    }
+  }))));
 };
+
+var style = "\n  .about-me {\n    background-color:#101010;\n    color:lightgrey;\n    padding:20px;\n  }\n  .aboutme p {\n    color:grey;\n  }\n";
 
 AboutMe.getInitialProps = function _callee(ctx) {
   var res;

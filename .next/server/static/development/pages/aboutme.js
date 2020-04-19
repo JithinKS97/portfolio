@@ -165,14 +165,23 @@ const Layout = ({
   }
 }), children));
 
+const theme = {
+  darkBackground: 'black',
+  titleColor: 'white',
+  subTitleColor: 'darkgrey',
+  headerColor: '#ee2a4d'
+};
 const style = `
   .title {
+    font-size:40px;
     display: inline-block;
     margin:0;
+    color: ${theme.titleColor}
   }
   .sub-title {
     display: inline-block;
     margin-left: 0.5rem;
+    color:${theme.subTitleColor}
   }
   * {
     font-family:Roboto;
@@ -187,6 +196,20 @@ const style = `
   }
   h2 {
     margin:0;
+    color: ${theme.headerColor}
+  }
+  body {
+    background-color:${theme.darkBackground};
+  }
+  a {
+    color:grey;
+    text-decoration:none;
+  }
+  a:hover {
+    color:white;
+  }
+  li {
+    color:white;
   }
 `;
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -195,7 +218,7 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42,
+    lineNumber: 66,
     columnNumber: 3
   }
 }, __jsx("h1", {
@@ -203,7 +226,7 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43,
+    lineNumber: 67,
     columnNumber: 5
   }
 }, "When you wake"), __jsx("div", {
@@ -211,7 +234,7 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44,
+    lineNumber: 68,
     columnNumber: 5
   }
 }, "Portfolio website of Jithin KS"));
@@ -306,6 +329,16 @@ const styles = `
     .nav-bar li {
         display:inline-block;
         margin-right:0.5rem;
+        color:black;
+    }
+    .nav-bar a {
+        text-decoration:none;
+        color:darkgrey;
+        font-weight:bold;
+    }
+    .nav-bar a:hover {
+        text-decoration:none;
+        color:lightgrey;
     }
 `;
 
@@ -2022,16 +2055,42 @@ const AboutMe = props => {
       lineNumber: 10,
       columnNumber: 7
     }
-  }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    source: content,
+  }, __jsx("style", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
       columnNumber: 9
     }
-  })));
+  }, style), __jsx("div", {
+    className: "about-me",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    source: content,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 11
+    }
+  }))));
 };
+
+const style = `
+  .about-me {
+    background-color:#101010;
+    color:lightgrey;
+    padding:20px;
+  }
+  .aboutme p {
+    color:grey;
+  }
+`;
 
 AboutMe.getInitialProps = async ctx => {
   const res = await __webpack_require__(/*! ../markdown/aboutme.md */ "./markdown/aboutme.md");

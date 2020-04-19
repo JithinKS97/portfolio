@@ -11,14 +11,24 @@ const Layout = ({ children }) => (
   </>
 );
 
+const theme = {
+  darkBackground:'black',
+  titleColor:'white',
+  subTitleColor:'darkgrey',
+  headerColor: '#ee2a4d'
+}
+
 const style = `
   .title {
+    font-size:40px;
     display: inline-block;
     margin:0;
+    color: ${theme.titleColor}
   }
   .sub-title {
     display: inline-block;
     margin-left: 0.5rem;
+    color:${theme.subTitleColor}
   }
   * {
     font-family:Roboto;
@@ -33,6 +43,20 @@ const style = `
   }
   h2 {
     margin:0;
+    color: ${theme.headerColor}
+  }
+  body {
+    background-color:${theme.darkBackground};
+  }
+  a {
+    color:grey;
+    text-decoration:none;
+  }
+  a:hover {
+    color:white;
+  }
+  li {
+    color:white;
   }
 `;
 

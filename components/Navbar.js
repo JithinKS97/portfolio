@@ -20,5 +20,15 @@ const styles = `
     .nav-bar li {
         display:inline-block;
         margin-right:0.5rem;
+        color:black;
+    }
+    .nav-bar a {
+        text-decoration:none;
+        color:darkgrey;
+        font-weight:bold;
+    }
+    .nav-bar a:hover {
+        text-decoration:none;
+        color:lightgrey;
     }
 `
