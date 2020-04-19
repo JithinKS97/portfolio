@@ -16,7 +16,8 @@ const List = ({ header, contents }) => (
 const style = `
   h2 {
     margin:0;
-    color: ${theme.headerColor}
+    color: ${theme.headerColor};
+    filter: drop-shadow(2px 2px black);
   }
 `;
 

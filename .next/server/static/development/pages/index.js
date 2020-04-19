@@ -610,7 +610,8 @@ const List = ({
 const style = `
   h2 {
     margin:0;
-    color: ${_theme__WEBPACK_IMPORTED_MODULE_2__["default"].headerColor}
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_2__["default"].headerColor};
+    filter: drop-shadow(2px 2px black);
   }
 `;
 /* harmony default export */ __webpack_exports__["default"] = (List);

@@ -14028,7 +14028,7 @@ var WorkEducation = function WorkEducation(props) {
   }))));
 };
 
-var style = "\n  .work-education {\n    background-color:".concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].lightBackground, ";\n    padding:10px;\n    border-radius:").concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].borderRadius, ";\n    margin-bottom:2rem;\n  }\n  .work-education li {\n    color: ").concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].writings, "\n  }\n  .work-education h2 {\n    color: ").concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].headerColor, ";\n    margin:0;\n  }\n");
+var style = "\n  .work-education {\n    background-color:".concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].lightBackground, ";\n    padding:10px;\n    border-radius:").concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].borderRadius, ";\n    margin-bottom:2rem;\n  }\n  .work-education li {\n    color: ").concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].writings, "\n  }\n  .work-education h2 {\n    color: ").concat(_theme__WEBPACK_IMPORTED_MODULE_4__["default"].headerColor, ";\n    margin:0;\n    filter: drop-shadow(2px 2px black);\n  }\n");
 
 WorkEducation.getInitialProps = function _callee(ctx) {
   var res;

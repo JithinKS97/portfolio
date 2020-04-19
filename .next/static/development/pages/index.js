@@ -425,7 +425,7 @@ var List = function List(_ref) {
   })));
 };
 
-var style = "\n  h2 {\n    margin:0;\n    color: ".concat(_theme__WEBPACK_IMPORTED_MODULE_2__["default"].headerColor, "\n  }\n");
+var style = "\n  h2 {\n    margin:0;\n    color: ".concat(_theme__WEBPACK_IMPORTED_MODULE_2__["default"].headerColor, ";\n    filter: drop-shadow(2px 2px black);\n  }\n");
 /* harmony default export */ __webpack_exports__["default"] = (List);
 
 /***/ }),

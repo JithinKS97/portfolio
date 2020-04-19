@@ -2140,6 +2140,7 @@ const style = `
   .work-education h2 {
     color: ${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].headerColor};
     margin:0;
+    filter: drop-shadow(2px 2px black);
   }
 `;
 
