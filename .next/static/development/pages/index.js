@@ -4979,7 +4979,7 @@ var Row = function Row(_ref) {
   }, components[1])));
 };
 
-var style = "\n  .row {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n  }\n  .row-content {\n    width:50%;\n    background-color:#101010;\n    margin:2px;\n    border-radius:".concat(_theme__WEBPACK_IMPORTED_MODULE_3__["default"].borderRadius, ";\n    padding:10px;\n  }\n");
+var style = "\n  .row {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n  }\n  .row-content {\n    width:50%;\n    background-color:#101010;\n    margin:2px;\n    border-radius:".concat(_theme__WEBPACK_IMPORTED_MODULE_3__["default"].borderRadius, ";\n    padding:10px;\n  }\n  @media only screen and (max-width: 800px) {\n    .row {\n      flex-direction: column;\n    }\n    .row-content {\n      width:100%;\n    }\n  }\n");
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),

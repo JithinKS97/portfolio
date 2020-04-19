@@ -2534,6 +2534,14 @@ const style = `
     border-radius:${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].borderRadius};
     padding:10px;
   }
+  @media only screen and (max-width: 800px) {
+    .row {
+      flex-direction: column;
+    }
+    .row-content {
+      width:100%;
+    }
+  }
 `;
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 

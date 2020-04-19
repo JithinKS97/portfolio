@@ -48,6 +48,14 @@ const style = `
     border-radius:${theme.borderRadius};
     padding:10px;
   }
+  @media only screen and (max-width: 800px) {
+    .row {
+      flex-direction: column;
+    }
+    .row-content {
+      width:100%;
+    }
+  }
 `;
 
 export default Index;
