@@ -1,0 +1,66 @@
+webpackHotUpdate("static/development/pages/work-education.js",{
+
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
+/* harmony import */ var _Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Title */ "./components/Title.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
+var _this = undefined,
+    _jsxFileName = "/home/jithinks/Desktop/portfolio/components/Layout.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+var Layout = function Layout(_ref) {
+  var children = _ref.children;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, style), __jsx("div", {
+    className: "wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }, __jsx(_Title__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }
+  }), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }), children));
+};
+
+var style = "\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .overall-wrapper {\n    position: fixed;\n    top:0;\n    width: 100vw;\n    height: 100vh;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n    background-color:rgba(255,0,0,0.5);\n  }\n  body {\n    background-color:".concat(_theme__WEBPACK_IMPORTED_MODULE_3__["default"].darkBackground, ";\n  }\n  iframe {\n    width:100vw;\n    height:100vh;\n    border:none;\n  }\n");
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ })
+
+})
+//# sourceMappingURL=work-education.js.48897ba7042ce99d4573.hot-update.js.map

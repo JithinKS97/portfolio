@@ -23,6 +23,7 @@ const style = `
     background-color:${theme.lightBackground};
     padding:10px;
     border-radius:${theme.borderRadius};
+    margin-bottom:2rem;
   }
   .work-education li {
     color: ${theme.writings}

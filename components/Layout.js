@@ -1,18 +1,7 @@
 import Navbar from "./Navbar";
 import Title from './Title'
-import theme from '../theme'
-import { useState, useEffect } from 'react'
 
 const Layout = ({ children }) => {
-
-  const [dimensions, setDimensions] = useState({width:0, height:0})
-
-  useEffect(()=>{
-    setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight
-    })
-  },[])
 
   return (
     <>
@@ -22,6 +11,7 @@ const Layout = ({ children }) => {
         <Navbar />
         {children}
       </div>
+      <iframe src="https://editor.p5js.org/jithunni.ks/embed/Q19ApoNm4"></iframe>
     </>
   )
 };
@@ -33,14 +23,34 @@ const style = `
   ol {
       padding-left:1rem;
   }
+  .overall-wrapper {
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+  }
   .wrapper {
     width:70vw;
     margin:auto;
     min-width:600px;
+    background-color:rgba(0,0,0,0);
+  }
+  iframe {
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    z-index:-1;
+    margin:0;
+    padding:0;
+    border:none;
   }
   body {
-    background-color:${theme.darkBackground};
+    padding:0;
+    margin:0;
   }
-`;
-
-export default Layout;
+  html {
+    background-color:black;
+  }
+`
+export default Layout

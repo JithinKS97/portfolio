@@ -128,36 +128,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
 /* harmony import */ var _Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Title */ "./components/Title.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
 const Layout = ({
   children
 }) => {
-  const {
-    0: dimensions,
-    1: setDimensions
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    width: 0,
-    height: 0
-  });
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight
-    });
-  }, []);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 8,
       columnNumber: 7
     }
   }, style), __jsx("div", {
@@ -165,24 +149,32 @@ const Layout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 9,
       columnNumber: 7
     }
   }, __jsx(_Title__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 10,
       columnNumber: 9
     }
   }), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 11,
       columnNumber: 9
     }
-  }), children));
+  }), children), __jsx("iframe", {
+    src: "https://editor.p5js.org/jithunni.ks/embed/Q19ApoNm4",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }));
 };
 
 const style = `
@@ -192,13 +184,34 @@ const style = `
   ol {
       padding-left:1rem;
   }
+  .overall-wrapper {
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+  }
   .wrapper {
     width:70vw;
     margin:auto;
     min-width:600px;
+    background-color:rgba(0,0,0,0);
+  }
+  iframe {
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    z-index:-1;
+    margin:0;
+    padding:0;
+    border:none;
   }
   body {
-    background-color:${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].darkBackground};
+    padding:0;
+    margin:0;
+  }
+  html {
+    background-color:black;
   }
 `;
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
