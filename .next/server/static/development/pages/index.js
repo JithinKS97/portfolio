@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -127,9 +127,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
+/* harmony import */ var _Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Title */ "./components/Title.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 const Layout = ({
@@ -138,7 +142,7 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5,
+    lineNumber: 7,
     columnNumber: 5
   }
 }, style), __jsx("div", {
@@ -146,43 +150,26 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
+    lineNumber: 8,
     columnNumber: 5
   }
-}, __jsx(Title, {
+}, __jsx(_Title__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 7
   }
 }), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8,
+    lineNumber: 10,
     columnNumber: 7
   }
 }), children));
 
-const theme = {
-  darkBackground: 'black',
-  titleColor: 'white',
-  subTitleColor: 'darkgrey',
-  headerColor: '#ee2a4d'
-};
 const style = `
-  .title {
-    font-size:40px;
-    display: inline-block;
-    margin:0;
-    color: ${theme.titleColor}
-  }
-  .sub-title {
-    display: inline-block;
-    margin-left: 0.5rem;
-    color:${theme.subTitleColor}
-  }
   * {
     font-family:Roboto;
   }
@@ -194,50 +181,12 @@ const style = `
     margin:auto;
     min-width:600px;
   }
-  h2 {
-    margin:0;
-    color: ${theme.headerColor}
-  }
   body {
-    background-color:${theme.darkBackground};
+    background-color:${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].darkBackground};
   }
-  a {
-    color:grey;
-    text-decoration:none;
-  }
-  a:hover {
-    color:white;
-  }
-  li {
-    color:white;
-  }
+
 `;
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-const Title = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 66,
-    columnNumber: 3
-  }
-}, __jsx("h1", {
-  className: "title",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 67,
-    columnNumber: 5
-  }
-}, "When you wake"), __jsx("div", {
-  className: "sub-title",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 68,
-    columnNumber: 5
-  }
-}, "Portfolio website of Jithin KS"));
 
 /***/ }),
 
@@ -252,20 +201,37 @@ const Title = () => __jsx("div", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/Link.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 const Link = ({
   link,
   title
 }) => {
-  return __jsx("li", {
+  return __jsx("div", {
+    className: "work-link",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
+      lineNumber: 5,
       columnNumber: 9
+    }
+  }, __jsx("style", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 13
+    }
+  }, style), __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 13
     }
   }, __jsx("a", {
     target: "_blank",
@@ -273,12 +239,24 @@ const Link = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
-      columnNumber: 13
+      lineNumber: 8,
+      columnNumber: 17
     }
-  }, title));
+  }, title)));
 };
 
+const style = `
+  .work-link a {
+    color:${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].linkColor};
+    text-decoration:none;
+  }
+  .work-link a:hover {
+    color:${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].linkHoverColor};
+  }
+  .work-link li {
+    color:grey;
+  }
+`;
 /* harmony default export */ __webpack_exports__["default"] = (Link);
 
 /***/ }),
@@ -386,6 +364,72 @@ const styles = `
 
 /***/ }),
 
+/***/ "./components/Title.js":
+/*!*****************************!*\
+  !*** ./components/Title.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../theme */ "./theme.js");
+var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/Title.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Title = () => __jsx("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4,
+    columnNumber: 5
+  }
+}, __jsx("style", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 7
+  }
+}, style), __jsx("h1", {
+  className: "title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 7
+  }
+}, "When you wake"), __jsx("div", {
+  className: "sub-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 7
+  }
+}, "Portfolio website of Jithin KS"));
+
+const style = `
+  .title {
+    font-size:40px;
+    display: inline-block;
+    margin:0;
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor}
+  }
+  .sub-title {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color:${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].subTitleColor}
+  }
+`;
+/* harmony default export */ __webpack_exports__["default"] = (Title);
+
+/***/ }),
+
 /***/ "./components/my-works/contents.js":
 /*!*****************************************!*\
   !*** ./components/my-works/contents.js ***!
@@ -482,9 +526,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Link */ "./components/Link.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/my-works/list.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 const List = ({
@@ -494,21 +540,28 @@ const List = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4,
+    lineNumber: 5,
     columnNumber: 5
   }
-}, __jsx("h2", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 9
-  }
-}, header), __jsx("ul", {
+}, __jsx("style", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6,
+    columnNumber: 9
+  }
+}, style), __jsx("h2", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 9
+  }
+}, header), __jsx("ol", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
     columnNumber: 9
   }
 }, contents.map(({
@@ -520,11 +573,17 @@ const List = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 45
   }
 }))));
 
+const style = `
+  h2 {
+    margin:0;
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_2__["default"].headerColor}
+  }
+`;
 /* harmony default export */ __webpack_exports__["default"] = (List);
 
 /***/ }),
@@ -2447,7 +2506,30 @@ const style = `
 
 /***/ }),
 
-/***/ 4:
+/***/ "./theme.js":
+/*!******************!*\
+  !*** ./theme.js ***!
+  \******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const theme = {
+  darkBackground: 'black',
+  lightBackground: '#101010',
+  titleColor: 'white',
+  subTitleColor: 'darkgrey',
+  headerColor: '#ee2a4d',
+  linkColor: 'darkgrey',
+  linkHoverColor: 'white',
+  writings: 'darkgrey'
+};
+/* harmony default export */ __webpack_exports__["default"] = (theme);
+
+/***/ }),
+
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

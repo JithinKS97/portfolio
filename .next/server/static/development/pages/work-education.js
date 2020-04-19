@@ -127,9 +127,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
+/* harmony import */ var _Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Title */ "./components/Title.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 const Layout = ({
@@ -138,7 +142,7 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5,
+    lineNumber: 7,
     columnNumber: 5
   }
 }, style), __jsx("div", {
@@ -146,43 +150,26 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
+    lineNumber: 8,
     columnNumber: 5
   }
-}, __jsx(Title, {
+}, __jsx(_Title__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 7
   }
 }), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8,
+    lineNumber: 10,
     columnNumber: 7
   }
 }), children));
 
-const theme = {
-  darkBackground: 'black',
-  titleColor: 'white',
-  subTitleColor: 'darkgrey',
-  headerColor: '#ee2a4d'
-};
 const style = `
-  .title {
-    font-size:40px;
-    display: inline-block;
-    margin:0;
-    color: ${theme.titleColor}
-  }
-  .sub-title {
-    display: inline-block;
-    margin-left: 0.5rem;
-    color:${theme.subTitleColor}
-  }
   * {
     font-family:Roboto;
   }
@@ -194,50 +181,12 @@ const style = `
     margin:auto;
     min-width:600px;
   }
-  h2 {
-    margin:0;
-    color: ${theme.headerColor}
-  }
   body {
-    background-color:${theme.darkBackground};
+    background-color:${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].darkBackground};
   }
-  a {
-    color:grey;
-    text-decoration:none;
-  }
-  a:hover {
-    color:white;
-  }
-  li {
-    color:white;
-  }
+
 `;
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-const Title = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 66,
-    columnNumber: 3
-  }
-}, __jsx("h1", {
-  className: "title",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 67,
-    columnNumber: 5
-  }
-}, "When you wake"), __jsx("div", {
-  className: "sub-title",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 68,
-    columnNumber: 5
-  }
-}, "Portfolio website of Jithin KS"));
 
 /***/ }),
 
@@ -341,6 +290,72 @@ const styles = `
         color:lightgrey;
     }
 `;
+
+/***/ }),
+
+/***/ "./components/Title.js":
+/*!*****************************!*\
+  !*** ./components/Title.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../theme */ "./theme.js");
+var _jsxFileName = "/home/jithinks/Desktop/portfolio/components/Title.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Title = () => __jsx("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4,
+    columnNumber: 5
+  }
+}, __jsx("style", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 7
+  }
+}, style), __jsx("h1", {
+  className: "title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 7
+  }
+}, "When you wake"), __jsx("div", {
+  className: "sub-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 7
+  }
+}, "Portfolio website of Jithin KS"));
+
+const style = `
+  .title {
+    font-size:40px;
+    display: inline-block;
+    margin:0;
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].titleColor}
+  }
+  .sub-title {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color:${_theme__WEBPACK_IMPORTED_MODULE_1__["default"].subTitleColor}
+  }
+`;
+/* harmony default export */ __webpack_exports__["default"] = (Title);
 
 /***/ }),
 
@@ -2040,31 +2055,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-markdown */ "react-markdown");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/home/jithinks/Desktop/portfolio/pages/work-education.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const WorkEducation = props => {
   const content = props.default;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 7
+    }
+  }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "work-education",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
     }
   }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
     source: content,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
+      lineNumber: 14,
+      columnNumber: 11
     }
-  })));
+  }))));
 };
+
+const style = `
+  .work-education {
+    background-color:${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].lightBackground};
+    padding:10px;
+  }
+  .work-education li {
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].writings}
+  }
+  .work-education h2 {
+    color: ${_theme__WEBPACK_IMPORTED_MODULE_3__["default"].headerColor};
+    margin:0;
+  }
+`;
 
 WorkEducation.getInitialProps = async ctx => {
   const res = await __webpack_require__(/*! ../markdown/work-education.md */ "./markdown/work-education.md");
@@ -2072,6 +2118,29 @@ WorkEducation.getInitialProps = async ctx => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (WorkEducation);
+
+/***/ }),
+
+/***/ "./theme.js":
+/*!******************!*\
+  !*** ./theme.js ***!
+  \******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const theme = {
+  darkBackground: 'black',
+  lightBackground: '#101010',
+  titleColor: 'white',
+  subTitleColor: 'darkgrey',
+  headerColor: '#ee2a4d',
+  linkColor: 'darkgrey',
+  linkHoverColor: 'white',
+  writings: 'darkgrey'
+};
+/* harmony default export */ __webpack_exports__["default"] = (theme);
 
 /***/ }),
 
