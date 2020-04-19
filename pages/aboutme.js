@@ -1,11 +1,22 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layout"
+import ReactMarkdown from 'react-markdown'
 
-const AboutMe = () => {
+const AboutMe = (props) => {
+
+  const content = props.default
+
   return (
     <>
-      <Layout>About me</Layout>
+      <Layout>
+        <ReactMarkdown  source={content}/>
+      </Layout>
     </>
   );
 };
+
+AboutMe.getInitialProps = async ctx => {
+  const res = await require('../markdown/aboutme.md')
+  return res
+}
 
 export default AboutMe;

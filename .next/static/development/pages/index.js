@@ -53,7 +53,7 @@ var Layout = function Layout(_ref) {
   }), children));
 };
 
-var style = "\n  .title {\n    display: inline-block;\n    margin:0;\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n  }\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n  }\n  h2 {\n    margin:0;\n  }\n";
+var style = "\n  .title {\n    display: inline-block;\n    margin:0;\n  }\n  .sub-title {\n    display: inline-block;\n    margin-left: 0.5rem;\n  }\n  * {\n    font-family:Roboto;\n  }\n  ol {\n      padding-left:1rem;\n  }\n  .wrapper {\n    width:70vw;\n    margin:auto;\n    min-width:600px;\n  }\n  h2 {\n    margin:0;\n  }\n";
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 var Title = function Title() {
@@ -61,7 +61,7 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 42,
       columnNumber: 3
     }
   }, __jsx("h1", {
@@ -69,15 +69,15 @@ var Title = function Title() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 43,
       columnNumber: 5
     }
-  }, "Wenuwake"), __jsx("div", {
+  }, "When you wake"), __jsx("div", {
     className: "sub-title",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 5
     }
   }, "Portfolio website of Jithin KS"));
@@ -202,14 +202,14 @@ var Navbar = function Navbar() {
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/resume",
+    href: "/work-education",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
       columnNumber: 17
     }
-  }, "Resume"))));
+  }, "Work/education"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
@@ -423,7 +423,7 @@ var articles = [{
   title: "Two questions that will help you to lead a fulfilled life!",
   link: "https://medium.com/@jithunni.ks/i-have-found-two-important-questions-to-which-you-need-to-find-answers-which-will-help-you-ea0470531a6b"
 }, {
-  title: "Are we becoming a machine during Examination",
+  title: "Are we becoming machine during examination",
   link: "https://medium.com/@jithunni.ks/are-we-becoming-a-machine-during-examination-2f6afc0c9a7c"
 }];
 /* harmony default export */ __webpack_exports__["default"] = (Articles);
@@ -4979,19 +4979,19 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Index = function Index() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
-      columnNumber: 9
+      columnNumber: 7
     }
-  }, __jsx("div", {
+  }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13,
-      columnNumber: 9
+      columnNumber: 7
     }
   }, __jsx("div", {
     __self: _this,
@@ -5000,59 +5000,44 @@ var Index = function Index() {
       lineNumber: 14,
       columnNumber: 9
     }
-  }, __jsx(Row, {
-    components: [__jsx(_components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 30
-      }
-    }), __jsx(_components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 52
-      }
-    })],
+  }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 11
     }
-  }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(Row, {
+    components: [__jsx(_components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 16,
-        columnNumber: 29
+        columnNumber: 31
       }
-    }), __jsx(_components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), __jsx(_components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 16,
-        columnNumber: 42
+        columnNumber: 54
       }
     })],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
-      columnNumber: 11
+      columnNumber: 13
     }
   }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    components: [__jsx(_components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17,
-        columnNumber: 29
+        columnNumber: 31
       }
-    }), __jsx(_components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), __jsx(_components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -5064,7 +5049,29 @@ var Index = function Index() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17,
-      columnNumber: 11
+      columnNumber: 13
+    }
+  }), __jsx(Row, {
+    components: [__jsx(_components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 31
+      }
+    }), __jsx(_components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 48
+      }
+    })],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
     }
   })))));
 };
@@ -5072,45 +5079,38 @@ var Index = function Index() {
 var Row = function Row(_ref) {
   var components = _ref.components;
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between'
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 3
-    }
-  }, __jsx("div", {
-    style: {
-      width: '50%'
-    },
+    className: "row",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28,
       columnNumber: 5
     }
-  }, components[0]), __jsx("div", {
-    style: {
-      width: '50%'
-    },
+  }, __jsx("div", {
+    className: "row-content",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 5
+      lineNumber: 29,
+      columnNumber: 7
+    }
+  }, components[0]), __jsx("div", {
+    className: "row-content",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
     }
   }, components[1])));
 };
 
+var style = "\n  .row {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n  }\n  .row-content {\n    width:50%;\n  }\n";
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!****************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fjithinks%2FDesktop%2Fportfolio%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************/
@@ -5133,5 +5133,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

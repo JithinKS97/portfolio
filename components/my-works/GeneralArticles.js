@@ -23,7 +23,7 @@ const articles = [
         link: "https://medium.com/@jithunni.ks/i-have-found-two-important-questions-to-which-you-need-to-find-answers-which-will-help-you-ea0470531a6b"
     }
     ,{
-        title: "Are we becoming a machine during Examination",
+        title: "Are we becoming machine during examination",
         link: "https://medium.com/@jithunni.ks/are-we-becoming-a-machine-during-examination-2f6afc0c9a7c"
     }
 ]

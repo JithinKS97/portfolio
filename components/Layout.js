@@ -29,6 +29,7 @@ const style = `
   .wrapper {
     width:70vw;
     margin:auto;
+    min-width:600px;
   }
   h2 {
     margin:0;
@@ -39,7 +40,7 @@ export default Layout;
 
 const Title = () => (
   <div>
-    <h1 className="title">Wenuwake</h1>
+    <h1 className="title">When you wake</h1>
     <div className="sub-title">Portfolio website of Jithin KS</div>
   </div>
 );

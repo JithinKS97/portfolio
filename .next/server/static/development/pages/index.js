@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -183,6 +183,7 @@ const style = `
   .wrapper {
     width:70vw;
     margin:auto;
+    min-width:600px;
   }
   h2 {
     margin:0;
@@ -194,7 +195,7 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 41,
+    lineNumber: 42,
     columnNumber: 3
   }
 }, __jsx("h1", {
@@ -202,15 +203,15 @@ const Title = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42,
+    lineNumber: 43,
     columnNumber: 5
   }
-}, "Wenuwake"), __jsx("div", {
+}, "When you wake"), __jsx("div", {
   className: "sub-title",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43,
+    lineNumber: 44,
     columnNumber: 5
   }
 }, "Portfolio website of Jithin KS"));
@@ -330,14 +331,14 @@ const Navbar = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment
     columnNumber: 13
   }
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/resume",
+  href: "/work-education",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9,
     columnNumber: 17
   }
-}, "Resume"))));
+}, "Work/education"))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
 const styles = `
@@ -543,7 +544,7 @@ const articles = [{
   title: "Two questions that will help you to lead a fulfilled life!",
   link: "https://medium.com/@jithunni.ks/i-have-found-two-important-questions-to-which-you-need-to-find-answers-which-will-help-you-ea0470531a6b"
 }, {
-  title: "Are we becoming a machine during Examination",
+  title: "Are we becoming machine during examination",
   link: "https://medium.com/@jithunni.ks/are-we-becoming-a-machine-during-examination-2f6afc0c9a7c"
 }];
 /* harmony default export */ __webpack_exports__["default"] = (Articles);
@@ -2453,19 +2454,19 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Index = () => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
-      columnNumber: 9
+      columnNumber: 7
     }
-  }, __jsx("div", {
+  }, style), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13,
-      columnNumber: 9
+      columnNumber: 7
     }
   }, __jsx("div", {
     __self: undefined,
@@ -2474,59 +2475,44 @@ const Index = () => {
       lineNumber: 14,
       columnNumber: 9
     }
-  }, __jsx(Row, {
-    components: [__jsx(_components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 30
-      }
-    }), __jsx(_components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 52
-      }
-    })],
+  }, __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 11
     }
-  }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(Row, {
+    components: [__jsx(_components_my_works_TechnicalArticles__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 16,
-        columnNumber: 29
+        columnNumber: 31
       }
-    }), __jsx(_components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), __jsx(_components_my_works_GeneralArticles__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 16,
-        columnNumber: 42
+        columnNumber: 54
       }
     })],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
-      columnNumber: 11
+      columnNumber: 13
     }
   }), __jsx(Row, {
-    components: [__jsx(_components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    components: [__jsx(_components_my_works_Projects__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17,
-        columnNumber: 29
+        columnNumber: 31
       }
-    }), __jsx(_components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), __jsx(_components_my_works_Artworks__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -2538,7 +2524,29 @@ const Index = () => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17,
-      columnNumber: 11
+      columnNumber: 13
+    }
+  }), __jsx(Row, {
+    components: [__jsx(_components_my_works_Simulations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 31
+      }
+    }), __jsx(_components_my_works_Animations__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 48
+      }
+    })],
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
     }
   })))));
 };
@@ -2546,44 +2554,46 @@ const Index = () => {
 const Row = ({
   components
 }) => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-  style: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 3
-  }
-}, __jsx("div", {
-  style: {
-    width: '50%'
-  },
+  className: "row",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 28,
     columnNumber: 5
   }
-}, components[0]), __jsx("div", {
-  style: {
-    width: '50%'
-  },
+}, __jsx("div", {
+  className: "row-content",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 31,
-    columnNumber: 5
+    lineNumber: 29,
+    columnNumber: 7
+  }
+}, components[0]), __jsx("div", {
+  className: "row-content",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30,
+    columnNumber: 7
   }
 }, components[1])));
 
+const style = `
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .row-content {
+    width:50%;
+  }
+`;
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
