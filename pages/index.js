@@ -1,27 +1,23 @@
-import ReactMarkdown from 'react-markdown'
-import GeneralArticles from '../components/GeneralArticles'
-import TechnicalArticles from '../components/TechnicalArticles'
-import Projects from '../components/Projects'
-import Artworks from '../components/Artworks'
-import Simulations from '../components/Simulations'
-import Animations from '../components/Animations'
+import GeneralArticles from '../components/my-works/GeneralArticles'
+import TechnicalArticles from '../components/my-works/TechnicalArticles'
+import Projects from '../components/my-works/Projects'
+import Artworks from '../components/my-works/Artworks'
+import Simulations from '../components/my-works/Simulations'
+import Animations from '../components/my-works/Animations'
+import Layout from '../components/Layout'
 
-const Index = ({content}) => {
-    console.log(content)
+const Index = () => {
   return (
     <>
-      <style>{styles}</style>
-        <div className="page-wrapper">  
-        <div className='introduction'>
-          <ReactMarkdown source={content.default} />
-        </div>
+        <Layout>
+        <div>  
         <div>
           <Row components={[ <TechnicalArticles/>, <GeneralArticles/>]}/>
           <Row components={[<Projects/>, <Artworks/>]}/>
           <Row components={[<Simulations/>, <Animations/>]}/>
         </div>
-        <AboutMe/>
       </div>
+      </Layout>
     </>
   );
 };
@@ -38,22 +34,5 @@ const Row = ({components}) => (
   </div>
   </>
 )
-
-Index.getInitialProps = async ctx => {
-    const content = await require(`../markdown/introduction.md`)
-    return { content }
-}
-
-const AboutMe = () => (
-  <div>About me</div>
-)
-
-const styles = `
-    .page-wrapper {
-        width:80vw;
-        margin:auto;
-        font-family:Roboto;
-    }
-`;
 
 export default Index;
