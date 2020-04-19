@@ -1,17 +1,42 @@
-import Link from 'next/link'
+import Link from "next/link";
+import { withRouter } from 'next/router'
 
-const Navbar = () => (
+const Navbar = ({ router }) => {
+  
+  console.log(router)  
+
+  return (
     <>
-        <style>{styles}</style>
-        <ul className='nav-bar'>
-            <li><Link href="/index">My works</Link></li>
-            <li><Link href="/aboutme">About me</Link></li>
-            <li><Link href="/work-education">Work/education</Link></li>
-        </ul>
+      <style>{styles}</style>
+      <ul className="nav-bar">
+        {links.map(({ title, route }) => (
+            <li>
+                <Link href={route}>
+                    <div className={router.pathname===route?'selected':'not-selected'}>{title}</div>
+                </Link>
+            </li>
+        ))}
+      </ul>
     </>
-)
+  );
+};
 
-export default Navbar
+const links = [
+    {
+        title:'My works',
+        route: '/'
+    },
+    {
+        title:'About me',
+        route:'/aboutme'
+    },
+    {
+        title: 'Work/education',
+        route:'/work-education'
+    }
+]
+
+export default withRouter(Navbar);
 
 const styles = `
     .nav-bar {
@@ -22,13 +47,15 @@ const styles = `
         margin-right:0.5rem;
         color:black;
     }
-    .nav-bar a {
-        text-decoration:none;
+    .selected {
+        color:white;
+    }
+    .not-selected {
         color:darkgrey;
-        font-weight:bold;
+        cursor:pointer;
     }
-    .nav-bar a:hover {
-        text-decoration:none;
+    .not-selected:hover {
         color:lightgrey;
+        cursor:pointer;
     }
-`
+`;
