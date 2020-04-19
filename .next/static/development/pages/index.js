@@ -61,10 +61,10 @@ var animations = [{
   title: "AnimateBig (Youtube animation channel)",
   link: "https://www.youtube.com/user/animatebig/videos"
 }, {
-  title: "Thuglife dude",
+  title: "Dude at coffee shop",
   link: "https://www.youtube.com/watch?v=blNn2rKyjA0"
 }, {
-  title: "Wise dude",
+  title: "Wise dude on top of mountain",
   link: "https://www.youtube.com/watch?v=FQ8XlLlXE70"
 }];
 /* harmony default export */ __webpack_exports__["default"] = (Animations);
@@ -129,13 +129,10 @@ var Artworks = function Artworks() {
 };
 
 var simulations = [{
-  title: "Dyuthi GEC Parallax effect (night)",
+  title: "Coverpage of Dyuthi website",
   link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax_night/sketch/index.html"
 }, {
-  title: "Dyuthi GEC Parallax effect (day)",
-  link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax/sketch/index.html"
-}, {
-  title: "Text spring effect",
+  title: "Spring effect on text",
   link: "https://jithinks97.github.io/TEDX/index.html"
 }];
 /* harmony default export */ __webpack_exports__["default"] = (Artworks);
@@ -200,9 +197,6 @@ var Articles = function Articles() {
 };
 
 var articles = [{
-  title: "Improving Science and Math education using p5.js",
-  link: "https://medium.com/processing-foundation/improving-science-and-math-education-using-p5-js-d434beea465c"
-}, {
   title: "The most beautiful feeling",
   link: "https://medium.com/@jithunni.ks/the-most-beautiful-feeling-b74aa7f82ba0"
 }, {
@@ -211,6 +205,9 @@ var articles = [{
 }, {
   title: "Two questions that will help you to lead a fulfilled life!",
   link: "https://medium.com/@jithunni.ks/i-have-found-two-important-questions-to-which-you-need-to-find-answers-which-will-help-you-ea0470531a6b"
+}, {
+  title: "Are we becoming a machine during Examination",
+  link: "https://medium.com/@jithunni.ks/are-we-becoming-a-machine-during-examination-2f6afc0c9a7c"
 }];
 /* harmony default export */ __webpack_exports__["default"] = (Articles);
 
@@ -382,23 +379,20 @@ var Simulations = function Simulations() {
 };
 
 var simulations = [{
+  title: "Dynamic learning workbooks",
+  link: "https://www.dynamiclearning.io/explore"
+}, {
   title: "Damped oscillation",
   link: "https://jithinks97.github.io/Dynamic-Learning/DampedOscillation/index.html"
 }, {
   title: "Djikstra's algorithm visualization",
   link: "https://jithinks97.github.io/Dynamic-Learning/Dijkstras/index.html"
-}, {
-  title: "Two dimensional wave",
-  link: "https://www.dynamiclearning.io/workbookeditor/K5w7Kxr9w7jwAW3FZ"
-}, {
+},, {
   title: "Interference experiment with bullets",
   link: "https://jithinks97.github.io/Dynamic-Learning/Interference-experiment-with-bullets/index.html"
 }, {
   title: "Perceptron training",
   link: "https://jithinks97.github.io/Perceptron%20training/index.html"
-}, {
-  title: "Dynamic learning workbooks",
-  link: "https://www.dynamiclearning.io/explore"
 }, {
   title: "Stability of atomic nucleus",
   link: "https://jithinks97.github.io/Dynamic-Learning/Stability%20of%20atomic%20nucleus/index.html"
@@ -468,11 +462,14 @@ var Articles = function Articles() {
 };
 
 var articles = [{
-  title: "Understanding the Universe through code",
-  link: "https://dev.to/jithinks97/understanding-the-universe-through-code-dg8"
+  title: "Improving Science and Math education using p5.js",
+  link: "https://medium.com/processing-foundation/improving-science-and-math-education-using-p5-js-d434beea465c"
 }, {
   title: "Writing clean code in React",
   link: "https://dev.to/jithinks97/writing-clean-react-code-2mcm"
+}, {
+  title: "Understanding the Universe through code",
+  link: "https://dev.to/jithinks97/understanding-the-universe-through-code-dg8"
 }];
 /* harmony default export */ __webpack_exports__["default"] = (Articles);
 
@@ -11715,19 +11712,19 @@ var Index = function Index(_ref) {
       columnNumber: 9
     }
   }, __jsx(Row, {
-    components: [__jsx(_components_GeneralArticles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    components: [__jsx(_components_TechnicalArticles__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 19,
-        columnNumber: 29
+        columnNumber: 30
       }
-    }), __jsx(_components_TechnicalArticles__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), __jsx(_components_GeneralArticles__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 19,
-        columnNumber: 49
+        columnNumber: 52
       }
     })],
     __self: _this,
@@ -11780,7 +11777,14 @@ var Index = function Index(_ref) {
       lineNumber: 21,
       columnNumber: 11
     }
-  }))));
+  })), __jsx(AboutMe, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  })));
 };
 
 var Row = function Row(_ref2) {
@@ -11794,7 +11798,7 @@ var Row = function Row(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 31,
       columnNumber: 3
     }
   }, __jsx("div", {
@@ -11804,7 +11808,7 @@ var Row = function Row(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 32,
       columnNumber: 5
     }
   }, components[0]), __jsx("div", {
@@ -11814,7 +11818,7 @@ var Row = function Row(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 35,
       columnNumber: 5
     }
   }, components[1])));
@@ -11841,6 +11845,17 @@ Index.getInitialProps = function _callee(ctx) {
       }
     }
   }, null, null, null, Promise);
+};
+
+var AboutMe = function AboutMe() {
+  return __jsx("div", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 3
+    }
+  }, "About me");
 };
 
 var styles = "\n    .page-wrapper {\n        width:80vw;\n        margin:auto;\n        font-family:Roboto;\n    }\n";

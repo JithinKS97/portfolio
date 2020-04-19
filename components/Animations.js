@@ -16,11 +16,11 @@ const animations = [
         link: "https://www.youtube.com/user/animatebig/videos"
     },
     {
-        title: "Thuglife dude",
+        title: "Dude at coffee shop",
         link: "https://www.youtube.com/watch?v=blNn2rKyjA0"
     },
     {
-        title: "Wise dude",
+        title: "Wise dude on top of mountain",
         link: "https://www.youtube.com/watch?v=FQ8XlLlXE70"
     }
 ]

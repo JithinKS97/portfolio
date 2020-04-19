@@ -11,15 +11,11 @@ const Artworks = () => (
 
 const simulations = [
     {
-        title: "Dyuthi GEC Parallax effect (night)",
+        title: "Coverpage of Dyuthi website",
         link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax_night/sketch/index.html"
     },
     {
-        title: "Dyuthi GEC Parallax effect (day)",
-        link: "https://jithinks97.github.io/GEC/Parallax%20finished/Parallax/sketch/index.html"
-    },
-    {
-        title: "Text spring effect",
+        title: "Spring effect on text",
         link: "https://jithinks97.github.io/TEDX/index.html"
     }
 ]

@@ -16,10 +16,11 @@ const Index = ({content}) => {
           <ReactMarkdown source={content.default} />
         </div>
         <div>
-          <Row components={[<GeneralArticles/>, <TechnicalArticles/>]}/>
+          <Row components={[ <TechnicalArticles/>, <GeneralArticles/>]}/>
           <Row components={[<Projects/>, <Artworks/>]}/>
           <Row components={[<Simulations/>, <Animations/>]}/>
         </div>
+        <AboutMe/>
       </div>
     </>
   );
@@ -42,6 +43,10 @@ Index.getInitialProps = async ctx => {
     const content = await require(`../markdown/introduction.md`)
     return { content }
 }
+
+const AboutMe = () => (
+  <div>About me</div>
+)
 
 const styles = `
     .page-wrapper {

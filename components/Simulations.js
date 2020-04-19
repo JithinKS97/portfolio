@@ -11,17 +11,17 @@ const Simulations = () => (
 
 const simulations = [
     {
+        title: "Dynamic learning workbooks",
+        link: "https://www.dynamiclearning.io/explore"
+    },
+    {
         title: "Damped oscillation",
         link: "https://jithinks97.github.io/Dynamic-Learning/DampedOscillation/index.html"
     },
     {
         title: "Djikstra's algorithm visualization",
         link: "https://jithinks97.github.io/Dynamic-Learning/Dijkstras/index.html"
-    },
-    {
-        title: "Two dimensional wave",
-        link: "https://www.dynamiclearning.io/workbookeditor/K5w7Kxr9w7jwAW3FZ"
-    },
+    },,
     {
         title: "Interference experiment with bullets",
         link: "https://jithinks97.github.io/Dynamic-Learning/Interference-experiment-with-bullets/index.html"
@@ -29,10 +29,6 @@ const simulations = [
     {
         title: "Perceptron training",
         link: "https://jithinks97.github.io/Perceptron%20training/index.html"
-    },
-    {
-        title: "Dynamic learning workbooks",
-        link: "https://www.dynamiclearning.io/explore"
     },
     {
         title: "Stability of atomic nucleus",
