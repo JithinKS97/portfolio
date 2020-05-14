@@ -47,6 +47,10 @@ export const projects = [
     {
         title: "Dynamic learning",
         link: "https://www.dynamiclearning.io/"
+    },
+    {
+        title:"Trajectory lab",
+        link: "https://github.com/JithinKS97/trajectory-lab"
     }
 ]
 
