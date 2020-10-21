@@ -71,10 +71,6 @@ export const technicalArticles = [
 
 export const simulations = [
     {
-        title: "Dynamic learning workbooks",
-        link: "https://www.dynamiclearning.io/explore"
-    },
-    {
         title: "Damped oscillation",
         link: "https://jithinks97.github.io/Dynamic-Learning/DampedOscillation/index.html"
     },
