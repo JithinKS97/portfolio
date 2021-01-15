@@ -64,12 +64,16 @@ export const technicalArticles = [
         link: "https://dev.to/jithinks97/writing-clean-react-code-2mcm"
     },
     {
-        title: "Understanding the Universe through code",
+        title: "Understanding the Universe through code: Spiral galaxies",
         link: "https://dev.to/jithinks97/understanding-the-universe-through-code-dg8"
     },
     {
         title: "An open-source project to teach effectively using interactive visualisations",
         link: "https://dev.to/jithinks97/dynamic-learning-an-open-source-tool-to-teach-effectively-using-interactive-visualisations-450n"
+    },
+    {
+        title: "Understanding the Universe through code: Planetary motion",
+        link: "https://dev.to/jithinks97/understanding-the-universe-through-code-planetary-motion-488h"
     }
 ]
 
